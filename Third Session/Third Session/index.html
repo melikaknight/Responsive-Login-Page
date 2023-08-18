@@ -5,28 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Users/melika/Downloads/assets/style/default.css">
-    <link media="(min-width:640px)" rel="stylesheet" href="/Users/melika/Downloads/assets/style/tablet.css">
-    <link media="(min-width:1024px)" rel="stylesheet" href="/Users/melika/Downloads/assets/style/desktop.css">
-
+    <link rel="stylesheet" href="./assets/style/default.css">
+    <link media="screen and (min-width:640px)" rel="stylesheet" href="./assets/style/tablet.css">
+    <link media="screen and (min-width:1024px)" rel="stylesheet" href="/Users/melika/Web-Front-end-Course/Third Session/Third Session/Third Session/assets/style/desktop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f72cf07ff9.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
+  <div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </div>
     <div class="container">
         <div>
           <div class="intro">
-            <img src="/Users/melika/Downloads/assets/images/login_img02.png" alt="logo" />
           </div>
           <div class="form">
             <h1>Welcome!</h1>
             <form  action="#">
                 <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
                     <input type="text"placeholder="your name" class="input"/>  
                 </div>
                 <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
                     <input type="email" placeholder="your email"class="input"/>
                 </div>
                 <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
                     <input type="password" placeholder="your password"class="input"/>
                 </div>
                 <div class="password-strength">
@@ -34,7 +41,7 @@
                     
                       <span class="line"></span>
                       <span class="line"></span>
-                      <span class="line blue"></span>
+                      <span class="blue line"></span>
                 </div>
                 <div class="btns">
                     <input type="submit" value="Create acount" class="button1" />

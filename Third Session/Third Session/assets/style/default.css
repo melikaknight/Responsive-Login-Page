@@ -1,68 +1,181 @@
 * {
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-    background-color: unset;
-    border:unset;
-    outline:none;
-    direction: ltr;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: unset;
+  border: unset;
+  outline: none;
+  direction: ltr;
+  font-family: 'Ubuntu', sans-serif;
 }
+
+
 .container {
-    box-shadow: 0px 0px 14px 2px #005aea25;
-    width: 95%;
-    height: 95%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .intro {
-    background-color: darkorange;
-    opacity: 0;
-  }
-  .container div{
-    width:100%;
-    height: 100%;
-    display: flex;
-    position: relative;
-  }
-  .container div > div{
-    width:100%;
-  }
-  .container .form{
-    background-color: #1a6df1f1;
-    width: 85%;
-    height: 85%;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    justify-content: center;
-    padding:0 20px;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  .form h1 {
-    color: white;
-    font-size: 45px;
-    font-weight: bold;
-    padding-bottom: 30px;
-  }
-  .input {
-    width: 100%;
-    height: 35px;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding: 0 0 0 40px;
-    font-weight: bold;
-    font-size: 13px;
-    color: #1a6df1f1;
-  }
-  .password-strength{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 15px;
-  }
+  box-shadow: 0px 0px 14px 2px #005aea25;
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  
+}
+
+.container div>div {
+  width: 100%;
+}
+
+.intro{
+  
+  display: none;
+   
+}
+
+.container div .form {
+  background-color: #1a6df1f1;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-shadow:0px 0px 15px #005aea25;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.input{
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 10px;
+  font-size: 14;
+  padding: 0 0 0 30px;
+  color:#1a6df1f1;
+  width: 100%;
+  height: 40px;
+
+}
+.input-box i{
+  position: absolute;
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 5px;;
+  color:#0c52c382;
+  font-size: 20px;
+  padding-right: 15px;
+
+}
+::-webkit-input-placeholder { /* Edge */
+  color:#0c52c382;
+  margin-left: 25px;
+  padding-left: 15px;
+
+}
+
+.password-strength {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.password-strength p{
+  color:white;
+  font-size: 15px;
+  margin-right: 4px;
+}
+.line{
+  width: 50px;
+  height: 4px;
+  background-color: rgba(255, 255, 0, 0.745);
+  border-radius: 6px;
+  margin-right: 5px;
+}
+.blue.line{
+  background-color: #0909c5;
+}
+.btns{
+  padding-top:40px;
+}
+.button1{
+  background: rgb(249, 166, 12);
+  background: linear-gradient(
+    80deg,
+    rgba(241, 202, 26, 0.945) 30%,
+    rgba(242, 164, 29,0.9) 95% 
+  );
+  
+  border-radius: 14px;
+  padding: 10px 30px;
+  width: 60%;
+  height: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button1:hover{
+  background: rgb(249, 166, 12);
+  background: linear-gradient(
+    80deg,
+    rgba(241, 202, 26, 0.945) 20%,
+    rgba(242, 164, 29,0.9) 50% 
+  );
+}
+.button2{
+  background-color:#1a6df1f1 ;
+  border:2px solid white;
+  width: 30%;
+  border-radius: 14px;
+  margin-left: 15px;
+  padding: 8px 5px;
+  color:white;
+  font-size: 13px;
+  cursor: pointer;
+}
+.button2:hover{
+  background-color:#6da0f3f1;
+}
+.circle1{
+  
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 0 0 0 300px;
+  background-color: rgb(189, 215, 234);
+  position: absolute;
+  bottom: 583px;
+  right:0px;
+}
+.circle2{
+  background:white;
+  border-radius: 50%;
+  border:55px solid #1a6df1f1;  
+  left: -70px;
+  top: 650px;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+  
+}
