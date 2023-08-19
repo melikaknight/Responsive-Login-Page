@@ -1,10 +1,20 @@
 .container{
     width: 70%;
     height: 70%;
+
 }
 body {
     overflow: hidden;
   }
+
+@keyframes slideInTablet {
+      0% {
+          transform: translateX(-100%);
+      }
+      100% {
+          transform: translateX(0);
+      }
+  } 
 .circle1{
   
     position: absolute;
@@ -13,15 +23,15 @@ body {
     border-radius: 0 0 0 300px;
     background-color: rgb(189, 215, 234);
     position: absolute;
-    bottom: 583px;
+    bottom: -72px;
     right:0px;
   }
 .circle2{
     background:white;
     border-radius: 50%;
     border:55px solid #1a6df1f1;  
-    left: -70px;
-    top: 650px;
+    top: -59px;
+    right: -31px;
     height: 400px;
     width: 400px;
     position: absolute;
@@ -36,6 +46,10 @@ body {
     width: 100%;
     height: 100%;
     box-shadow: unset;
+    animation: slideInTablet 0.5s forwards;
+}
+.container .first{
+    background-color: white;
 }
 .container div .intro{
     width: 40%;

@@ -29,10 +29,16 @@
   }
   .container div .form{
     padding: 0 80px;
+    animation: slideIn 0.5s backwards;
+
   }
   .container div .intro{
     width: 80%;
     height: 80%;
     z-index: 3;
+    background-color: white;
+  }
+  .container .first{
+    background-color: white;
   }
   
