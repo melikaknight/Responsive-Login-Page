@@ -34,14 +34,14 @@
   }
 }*/
 
-@keyframes slideIn {
+/* @keyframes slideIn {
   0% {
       transform: translateX(0);
   }
   0% {
       transform: translateX(-50%);
   }
-}
+} */
 @keyframes slideInMobile {
   0% {
       transform: translateX(0);
