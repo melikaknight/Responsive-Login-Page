@@ -23,15 +23,15 @@ body {
     border-radius: 0 0 0 300px;
     background-color: rgb(189, 215, 234);
     position: absolute;
-    bottom: -72px;
-    right:0px;
+    top: -59px;
+    right: -31px;
   }
 .circle2{
     background:white;
     border-radius: 50%;
     border:55px solid #1a6df1f1;  
-    top: -59px;
-    right: -31px;
+    bottom: -72px;
+    left: -103px;
     height: 400px;
     width: 400px;
     position: absolute;
